@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="assets/css/main2.1.css" />
   <link rel="stylesheet" href="reset.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" rel="stylesheet">
-  <link rel="stylesheet" href="fontello-9a38ea39/css/fontello.css">
-  <style>
+  <link rel="stylesheet" href="fontello-01956fcb/css/fontello.css">
+</head>
+ <style>
    .scene.one{
       background-image: url(images/bg04.jpg);
     }
-   .scene.two{
-      background-image: url(images/bg.jpg);
+    .scene.two{
+      background-image: url(images/bg05.jpg);
     }
     .scene.three{
       background-image: url(images/bg06.jpg);
@@ -21,8 +22,28 @@
     .scene.four{
       background-image: url(images/bg07.jpg);
     }
-  </style>
-</head>
+    .scene.two img{
+      width:300px;
+      border-radius:5%;
+      border:1px solid rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.05);
+      display:inline-block;
+      padding:0.5rem;
+    }
+    .scene.two div{
+      padding-left:280px;
+      padding-right:280px;
+      padding-bottom:30px;
+      text-align:left;
+    }
+    .scene.two a{
+      text-decoration:none;
+    }
+    .scene.two a:hover{
+      border:1px solid rgba(0,0,0,0.1);
+      background-color: rgba(0,0,0,0.09);
+    }
+ </style>
  
 <body>
   <section class="scene one">
@@ -36,43 +57,49 @@
         <ul class="icons">
 		    <li><a href="https://github.com/youthrich40" class="icon-github-circled"><span class="label">GitHub</span></a></li>
 		    <li><a href="https://www.facebook.com/sejong.jang.12" class="icon-facebook"><span class="label">Facebook</span></a></li>
-			<li><a href="https://www.instagram.com/youthrich40/?hl=en" class="icon-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="https://www.linkedin.com/in/sejong-%EC%84%B8%EC%A2%85%E4%B8%96%E5%AE%97-jang-352208123/" class="icon-linkedin-squared"><span class="label">LinkedIn</span></a></li>
-			<li><a href="#" class="icon-mail"><span class="label">Email</span></a></li>
-		</ul>
-		<h2>Type your name</h2>
-
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me.</button>
-
-<p id="demo"></p>
-
-<form>
-    <input type="text" id="myform">
-    <button onclick = "myFunction(event)"> Click me</button>
+  			<li><a href="https://www.instagram.com/youthrich40/?hl=en" class="icon-instagram"><span class="label">Instagram</span></a></li>
+  			<li><a href="https://www.linkedin.com/in/sejong-%EC%84%B8%EC%A2%85%E4%B8%96%E5%AE%97-jang-352208123/" class="icon-linkedin-squared"><span class="label">LinkedIn</span></a></li>
+  			<li><a href="#" class="icon-mail"><span class="label">Email</span></a></li>
+    		</ul>
+    		<h2>Type your name</h2>
     
-    <p id="demo"> </p>
-</form>
-
-<script>
-    function myFunction(event){
-        document.getElementById(("demo")).innerHTML="Hello " + document.getElementById("myform").value;
-        event.preventDefault();
-    }
-</script>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me.</button>
+        
+        <p id="demo"></p>
+        
+        <form>
+          <input type="text" id="myform">
+          <button onclick = "myFunction(event)"> Click me</button>
+          
+          <p id="demo"> </p>
+        </form>
+        
+        <script>
+          function myFunction(event){
+              document.getElementById(("demo")).innerHTML="Hello " + document.getElementById("myform").value;
+              event.preventDefault();
+          }
+        </script>
     </header>
   </section>
+  
   <section class="scene two">
     <header>
-      <h1>ABOUT ME</h1> I grew up in Korea and this is my 3rd year studying in the States. I received my associate degree in
-Accounting from LDS Business college, Salt Lake City, Utah. Currently, I am pursuing a bachelor's
-degree in Computer Science at Brigham Young University in Provo, Utah. This is my sophomore year and
-I will be a junior this fall. Previously, I used to work as a web designer using Adobe Photoshop and
-Illustrator for ARTJ, Ro Corperation and IHAND Corporation (two Korean companies).
-<a href="images/resume.pdf" class="icon-mail"><span class="label">Resume</span></a>
+      <img src="images/02.jpg">
+      <h3>BACKGROUND</h3> 
+      <div>
+        I grew up in Korea and this is my 3rd year studying in the States. 
+        I received my associate degree in Accounting from LDS Business college, Salt Lake City, Utah. 
+        Currently, I am pursuing a bachelor's degree in Computer Science at Brigham Young University in Provo, Utah.
+        This is my sophomore year and I will be a junior this fall. 
+        Previously, I used to work as a web designer using Adobe Photoshop and Illustrator for ARTJ, Ro Corperation and IHAND Corporation (two Korean companies).
+      </div>
+      <a href="images/resume.pdf" class="icon-doc-text"><span class="label">Resume</span></a>
     </header>
   </section>
+  
   <section class="scene three">
     <header>
       <h1>WROK EXPERIENCE</h1> 
@@ -81,6 +108,7 @@ Illustrator for ARTJ, Ro Corperation and IHAND Corporation (two Korean companies
       <li>Army Instructor at Korean Army Training Center</li>
     </header>
   </section> 
+  
   <section class="scene four">
     <header>
       <h1>PROJECT</h1>
